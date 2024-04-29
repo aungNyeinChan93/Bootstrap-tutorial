@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body data-bs-spy="scroll">
+    <!-- navbar -->
+    <div class="navbar bg-primary shadow navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="" class="navbar-brand"
+          ><i class="fa-solid fa-shop fa-md me-2"></i> My Page</a
+        >
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mynavbar1"
+        aria-controls="mynavbar1"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar1">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item na">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        </ul>
+        <div>
+          <!-- <form class="d-flex justify-content-between" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </div>
+    <!-- /navbar -->
+
+    <!-- pagination -->
+
+    <div class="container d-flex justify-content-center" id="menu">
+      <nav class="mt-4">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link bg-warning" href="">Prev</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="">1</a></li>
+          <li class="page-item"><a class="page-link active" href="">2</a></li>
+          <li class="page-item"><a class="page-link" href="">2</a></li>
+          <li class="page-item"><a class="page-link" href="">2</a></li>
+          <li class="page-item"><a class="page-link" href="">2</a></li>
+          <li class="page-item">
+            <a class="page-link bg-danger" href="">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /pagination -->
+
+    <!-- placeholder -->
+    <div class="d-flex justify-content-start" id="product">
+      <div class="card w-25">
+        <img
+          src="https://cdn.pixabay.com/photo/2017/12/19/18/09/flowers-3028429_640.jpg"
+          class="card-img mt-2 rounded"
+          alt="..."
+        />
+
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+      <div class="card w-25" aria-hidden="true">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAwwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAgMGB//EAC4QAQACAQIEBAQGAwAAAAAAAAABAgMEEQUhMVESEyJBUmFxkSNCgaHB0TIzkv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/APoIDo5gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM+G3wz9gYAAAAAAAAAAAAAAAAAAAAB202nvqL+GnKI627A548d8t4pjrNrT7QstPwusbTntvPw16fdM0+DHp6eHHH1n3l1ZtakaY8OPF/rx1r9IdN2BFa3pTJG16Vt9Y3Rc3DcF+dN8c/LnH2TAFFqNFmwbzMeKnxVR3pULV8Ppl3ti2pft7S1KzYpx0vgy0tNbY7bx8mFRoAAAAREzMREbzPtAt+F6etMUZpje9uk9oKRAjRamY38mdvnMOF6Wpaa3rNZj2mHpEfW6euowzy9dY3rP8M61iiAaZAAAZpW17xSkb2mdogHTTYL6jLFKfrPaF7hxUw44pSNoj92mk09dNiisc7TztPeXZm1qQARQAAAAAAAHmgG2AABe8PvF9Jj2/LHhn9FE7abU5NNfenOJ61npKVYv2uW8Y8dr26VjdBjiuPbnivE9o2Q9XrL6n07eGkflj+UxdRgGmQABbcM0vl0868eu0emO0InDtN5+XxWj8OnX5z2XSWtSADKgAAAAAAAAAKu3Cr/lzVn612Rs2iz4udqbx3rzXoupjzQvdRo8OfeZr4b/FVVanSZdPO9o8VPa0LqYjgKgAAAA2x0tlyVpSN7WnaGq34ZpvLx+bePXaOXyhKsSsGKuDFXHXpHWe8ugMtAAAAAAAAAAAAAABMRMbTG8ACs1nDtt76ePrT+la9Kh63Q1z73x7VyftZZUsUwzatqWmtomLR1iWGmQEjR6W2pv2pH+VgdOHaXzr+ZePw6z/ANSuWKUrjpFKRtWOkMsWtyAAAAAAAAAAAAAAAAAAAAI+r0mPUxz9N46WhXW4bqInaPDaO8SuRdTFZg4XO++e0bfDX+1lSlcdYrSsVrHSIZE1cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k="
+          class="card-img mt-2 img-glow w-75 mx-auto rounded"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title placeholder-glow">
+            <span class="placeholder col-6"></span>
+          </h5>
+          <p class="card-text placeholder-glow">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+            <span class="placeholder col-8"></span>
+          </p>
+          <a
+            class="btn btn-primary disabled placeholder col-6"
+            aria-disabled="true"
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!-- /placeholder -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- popover -->
+    <button
+      type="button"
+      class="mt-5 btn btn-lg btn-info"
+      data-bs-toggle="popover"
+      data-bs-title="Popover Title"
+      data-bs-content="jdksajfklsdjfklasjdfklajsdfkljasdkfjaksdfjlka"
+      data-bs-container="body"
+      data-bs-placement="right"
+    >
+      popOver
+    </button>
+    <!-- <button
+      type="button"
+      class="mt-3 btn btn-lg btn-danger"
+      data-bs-toggle="popover"
+      data-bs-title="Popover title"
+      data-bs-content="And here's some amazing content. It's very engaging. Right?"
+      data-bs-placement="right"
+      data-bs-container="body"
+
+    >
+      Click to toggle popover
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-container="body"
+      data-bs-toggle="popover"
+      data-bs-placement="left"
+      data-bs-content="Left popover"
+    >
+      Popover on left
+    </button> -->
+    <!-- /popover -->
+    <p id="about">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt,
+      aperiam? Minus, hic pariatur autem maiores quaerat ipsa facilis vel
+      blanditiis esse repudiandae dolore dolores magnam. Nam cumque soluta
+      delectus animi ut eligendi pariatur dolorem voluptas autem, tempore
+      laudantium officiis consequatur deleniti facilis maiores suscipit eaque
+      repellat fuga blanditiis modi possimus hic mollitia. Odio qui neque aut
+      magni quibusdam mollitia atque laudantium beatae quae repellendus nesciunt
+      quis officiis, voluptas ipsum consequuntur eveniet repudiandae magnam, quo
+      doloremque excepturi? Iste exercitationem modi quos pariatur voluptatum
+      doloremque rem ipsa, tempore a id quisquam, eos obcaecati dolor quidem
+      distinctio, voluptates hic accusamus iure! Aliquid delectus dolor ab
+      nostrum molestiae nemo alias minus aut quia autem provident enim, non
+      fugiat asperiores! Omnis laborum, porro repellat a fuga laboriosam odit ea
+      eius harum minima similique magnam sed animi ullam, consequatur, dicta
+      molestiae placeat aperiam non dolore autem. Officia tempore veniam ex quos
+      minima dolore suscipit maxime dolorum corporis nostrum. Maxime iure itaque
+      deserunt harum mollitia. Aliquid corrupti velit reprehenderit mollitia
+      temporibus saepe, aperiam deserunt molestiae, nesciunt explicabo, ullam
+      voluptas veniam sequi inventore perspiciatis sint nam nihil. Rerum beatae
+      soluta nobis quis maiores reprehenderit distinctio laborum necessitatibus
+      saepe repudiandae animi, sequi fugit vero dicta, dolorum magnam maxime hic
+      consequatur ipsum alias deserunt earum! Sunt accusamus, quod dolores
+      temporibus tenetur quae dolorem soluta maiores eum impedit quasi quas
+      nesciunt ea modi nisi! Quis facilis, odio ab harum autem eveniet at
+      perspiciatis! Dicta, consectetur laborum! Et incidunt laborum at
+      doloribus, quod eaque natus cupiditate corrupti debitis saepe, sequi esse
+      fugiat placeat a hic tempore nostrum! Error distinctio deserunt blanditiis
+      inventore porro nobis, corporis libero laboriosam autem qui eum molestiae
+      aut sequi nulla cupiditate impedit, temporibus magni natus asperiores
+      earum omnis optio tempora minus vel? Accusantium magni tempore praesentium
+      quidem atque eaque reprehenderit ab inventore, et dolor nesciunt deleniti
+      ipsam commodi quod reiciendis sapiente, temporibus aliquam iusto error
+      itaque, perspiciatis ducimus laudantium quia. Aperiam aliquid commodi
+      recusandae doloremque provident laudantium eligendi praesentium culpa
+      tenetur? Ut accusantium earum accusamus maiores dolorem, deserunt et iure
+      optio fuga commodi similique tempora suscipit unde exercitationem
+      repellendus eveniet eligendi laboriosam atque eum reprehenderit neque ex
+      repudiandae aliquam assumenda. Quis autem hic, sit deserunt labore
+      obcaecati a delectus ex nisi necessitatibus at alias, ducimus modi
+      repellat dignissimos, iure non similique totam illo aliquid quam
+      consequuntur. Asperiores optio non adipisci recusandae totam a esse
+      aperiam mollitia harum molestiae similique blanditiis eveniet laboriosam,
+      quisquam odit obcaecati quaerat ullam sint delectus. Maiores magni
+      temporibus, eveniet nam vero soluta dolores, adipisci eum, voluptates
+      officiis voluptatibus odio ratione porro tempora quis quod quam. Aperiam
+      necessitatibus inventore consectetur corporis sed veniam natus, nobis
+      blanditiis nisi facere. Optio, praesentium. Qui, veniam. Ipsam eveniet ex,
+      quis exercitationem, suscipit sunt aspernatur modi perspiciatis omnis
+      quibusdam illum commodi quasi laborum repellendus ut quaerat amet? Aliquid
+      eligendi tempora sint commodi ullam dolorum iusto expedita! Numquam
+      necessitatibus doloribus fugiat aut impedit doloremque sapiente,
+      voluptatibus quia, eius, debitis tenetur exercitationem nostrum porro
+      voluptatum. Modi, earum. Inventore rem odio mollitia odit corrupti
+      cupiditate doloremque ipsam harum nostrum soluta consequatur commodi animi
+      eveniet laboriosam officiis debitis aperiam, eos sed sapiente iusto
+      molestias, amet voluptas, a rerum. Incidunt facere ducimus, libero vero,
+      eius optio velit itaque voluptatibus autem cum repellendus, harum ipsam
+      earum nesciunt voluptate ullam magnam sit distinctio beatae. A asperiores
+      velit doloribus veritatis quasi consequatur sed error. Vitae sequi
+      voluptatibus provident, officiis doloribus autem dolor recusandae fugiat
+      fugit nisi, tempore nemo ex nostrum odit deserunt vel porro perspiciatis
+      veniam. Ipsam dolores magnam possimus nesciunt consectetur officiis
+      corrupti similique. Quas eveniet vel quis sed. Reprehenderit illum,
+      architecto alias qui voluptatibus a aliquid, ipsum eos dolores odio
+      deleniti perspiciatis sunt sequi hic veritatis nobis necessitatibus odit
+      laboriosam? Nulla aliquam, aut, deleniti vitae, perferendis ab repudiandae
+      quas magni voluptas sequi laudantium vero. Vero quasi dolores vitae
+      praesentium odio! Id illum impedit cupiditate, temporibus commodi
+      dignissimos voluptatem perspiciatis qui distinctio culpa cum a quae
+      molestiae enim iste illo provident fugit earum accusantium minus nobis
+      doloremque doloribus atque? Fugit assumenda ipsum, facilis, esse iusto
+      accusantium obcaecati architecto dolorem sit, incidunt dignissimos tempore
+      odit qui recusandae reiciendis! Nesciunt molestiae natus rerum voluptatem
+      consectetur deleniti minima et aliquid, nisi magnam possimus consequuntur!
+      Laborum autem ex ad odio quod maiores nesciunt recusandae veniam
+      aspernatur quis harum totam provident ut quaerat rerum, velit alias
+      repellendus suscipit eum dolorem cupiditate ipsa! Soluta quibusdam
+      incidunt quis dolor sit repellendus, fugit blanditiis iste neque nobis
+      eligendi voluptate, voluptas est quas labore. Explicabo blanditiis nisi
+      est. Iusto delectus perferendis odio dolore. Corrupti, quibusdam.
+      Eligendi, tenetur. Rerum necessitatibus quos, voluptas iusto voluptates
+      blanditiis quia atque deleniti ullam omnis, illum harum numquam quibusdam
+      asperiores corporis natus pariatur vero nesciunt. Dicta dolor recusandae
+      at a harum molestias, nesciunt quas optio repellat sit enim voluptate
+      nemo! Consequatur, aliquid dolorum. Quod iusto amet natus libero! Culpa
+      officiis sint molestias voluptates illo dolorem quo assumenda nemo
+      mollitia distinctio, nulla harum atque. Minus aut quidem, sequi autem ab
+      at porro, excepturi aspernatur fugit nostrum ad. Enim veniam consequatur
+      dolorum eum sed debitis iste corporis totam doloremque obcaecati fugiat
+      optio minus quibusdam quam nulla nisi saepe quos maiores voluptatum
+      ducimus officia tempore vel, aperiam vitae? Voluptatum cupiditate, nam,
+      nesciunt debitis eveniet asperiores quibusdam rerum unde assumenda neque
+      dignissimos ratione laboriosam quasi sit beatae ut maiores exercitationem!
+      Sint ex eum voluptatum? Fugiat, quaerat nesciunt itaque minus debitis
+      reprehenderit nisi ex vero id explicabo officia fugit enim in recusandae
+      rerum necessitatibus iure illum amet dolores repudiandae architecto autem
+      ipsa! Libero exercitationem maxime laudantium, optio ad, pariatur in eaque
+      sint, deleniti voluptate autem perspiciatis nam. Modi iusto repudiandae
+      pariatur, illum, ducimus quod assumenda dicta maxime provident facere
+      optio unde est. Eius odit, esse veniam doloribus distinctio earum, tenetur
+      soluta pariatur accusantium animi qui tempore incidunt quos deleniti
+      sapiente dolor nulla nostrum libero amet fuga? Rem excepturi accusantium
+      sapiente minima, iure sunt sed voluptatum odio. Voluptate, delectus
+      dolorum repellat repellendus quia doloremque possimus at, atque veniam
+      voluptas nisi ipsum debitis vitae minima, error totam aspernatur
+      consectetur odio provident. Quidem deserunt corrupti tempore temporibus
+      ratione ipsum natus quo? Exercitationem ea unde voluptatibus ducimus enim
+      in veritatis quo?
+    </p>
+    
+  </body>
+
+  <script>
+    // popover js //
+    const popoverTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="popover"]'
+    );
+    const popoverList = [...popoverTriggerList].map(
+      (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+    );
+  </script>
+</html>
